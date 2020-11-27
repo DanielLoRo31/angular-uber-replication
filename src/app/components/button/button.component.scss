@@ -1,0 +1,22 @@
+button {
+    outline: none;
+    background-color: #F0F0F0;
+    border: none;
+    color: black;
+    font-weight: 500;
+    font-size: .95em;
+    padding: 6px 15px 6px 15px;
+    border: {
+        radius: 50px
+    }
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+img {
+    margin: {
+        right: 5px;
+    }
+}

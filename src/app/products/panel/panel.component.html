@@ -1,0 +1,34 @@
+<div class="panelContainer">
+  <h1>Productos</h1>
+
+  <h4>{{ number$ | async}} Platillos</h4>
+
+  <div class="accordeon" (click)="expandir = !expandir">
+    <span class="title">Platillos</span>
+    <span class="img"><img *ngIf="expandir; else tplElse" src="../../../assets/img/flechaArriba.svg" width="10px" alt=""></span>
+
+    <ng-template #tplElse>
+      <img src="../../../assets/img/flechaAbajo.svg" width="10px" alt="">
+    </ng-template>
+  </div>
+
+  <div *ngIf="expandir">
+
+    <label class="raddioLabel"><input type="radio" (click)="onClick(0,'Pizza')" name="food"><span><img *ngIf="raddio[0]; else tplElseRaddio"
+          src="../../../assets/img/runcheck.svg" class="imgRaddio" alt=""></span> Pizza</label>
+    <br>
+    <label class="raddioLabel"><input type="radio" (click)="onClick(1, 'Tacos')" name="food"><span><img *ngIf="raddio[1]; else tplElseRaddio"
+          src="../../../assets/img/runcheck.svg" class="imgRaddio" alt=""></span> Tacos</label>
+    <br>
+    <label class="raddioLabel"><input type="radio" (click)="onClick(2, 'Pasta')" name="food"><span><img *ngIf="raddio[2]; else tplElseRaddio"
+          src="../../../assets/img/runcheck.svg" class="imgRaddio" alt=""></span> Pasta</label>
+    <br>
+    <label class="raddioLabel"><input type="radio" (click)="onClick(3, 'Carne')" name="food"><span><img *ngIf="raddio[3]; else tplElseRaddio"
+          src="../../../assets/img/runcheck.svg" class="imgRaddio" alt=""></span> Carne</label>
+  </div>
+
+  <ng-template #tplElseRaddio>
+    <img src="../../../assets/img/rcheck.svg" class="imgRaddio" alt="">
+  </ng-template>
+
+</div>

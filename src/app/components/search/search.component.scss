@@ -1,0 +1,52 @@
+
+.search-container{
+    display: block;
+    width: 90%;
+    margin: {
+        left: auto;
+        right: auto;
+    }
+}
+
+.principal {
+  width: 100%;
+  background-color: #F6F6F6;
+  padding: 15px 10px 15px 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  margin: {
+    left: 10px;
+    right: 10px;
+  }
+}
+
+input {
+  width: calc(100% - 30px);
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+input::placeholder {
+  font-weight: 500;
+}
+
+.barra {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: .5px;
+  background-color: #b9b9b9;
+  transition: .3s;
+}
+
+
+.appear {
+  height: 2px;
+  background-color: black;
+}

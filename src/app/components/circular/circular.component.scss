@@ -1,0 +1,36 @@
+.square {
+  position: relative;
+  width: 100px;
+}
+
+.square:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background: {
+    color: black;
+    size: auto 100%;
+    position: center center;
+  }
+
+  transition: .5s;
+  cursor: pointer;
+}
+
+.image:hover {
+  -webkit-box-shadow: 0px 0px 19px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 19px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 19px -4px rgba(0, 0, 0, 0.75);
+}
+
+.image:active {
+    opacity: .6;
+}

@@ -1,0 +1,24 @@
+<div class="card-container">
+  <div class="image" style="background-image: url({{imagen}})"></div>
+
+  <div class="pointer">
+    <div class="content">
+      <div class="title">{{product.title}}</div>
+      <div class="score">
+        {{product.score}}
+      </div>
+    </div>
+    <div class="price">
+      Costo de platillo: MXN{{product.cost}}
+    </div>
+  </div>
+  <div class="like" (click)="onClickLike()">
+    <img *ngIf="product.like; else tplElse" src="../../../assets/img/like.svg">
+  </div>
+
+
+</div>
+
+<ng-template #tplElse>
+  <img src="../../../assets/img/unlike.svg">
+</ng-template>

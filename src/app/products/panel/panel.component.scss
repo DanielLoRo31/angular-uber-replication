@@ -1,0 +1,63 @@
+.panelContainer {
+    padding: {
+        left: 40px;
+    }
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 0.96em;
+    font-weight: 400;
+}
+
+.accordeon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: {
+        top: 5px;
+        bottom: 5px;
+    }
+    cursor: pointer;
+}
+
+.accordeon > .title {
+    font-size: 1.3em;
+    font-weight: 600;
+    width: calc(100% - 20px);
+}
+
+.accordeon > .img {
+    width: 20px;
+    padding: {
+        left: 5px;
+        right: 5px;
+    }
+}
+
+input {
+    display: none;
+}
+
+
+.raddioLabel {
+    font: {
+        size: .97em;
+        weight: 500;
+    }
+    cursor: pointer;
+}
+
+.imgRaddio {
+    width: 25px;
+    margin: {
+        right: 10px;
+    }
+}
